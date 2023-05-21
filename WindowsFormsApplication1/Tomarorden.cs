@@ -8,6 +8,9 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using  Practica4;
+using WindowsFormsApplication1.Datos;
+using WindowsFormsApplication1.Model;
+using static System.Windows.Forms.VisualStyles.VisualStyleElement;
 using static System.Windows.Forms.VisualStyles.VisualStyleElement.TextBox;
 // se agrego la libreria que antes habiamos creado
 //En esta clase agregamos el codigo de nuestra aplicación. 
@@ -16,6 +19,8 @@ namespace WindowsFormsApplication1
 {
     public partial class Tomarorden : Form
     {
+        DataTable Tabla;
+        Usuario dato = new Usuario();
         public Tomarorden()
         {
             InitializeComponent();// inicualiza los componentes de la IU
@@ -23,6 +28,7 @@ namespace WindowsFormsApplication1
         String Desayuno, resultado,Pasta,Pollo,Carne,Mar,Caldo,Postre,Bebida;
         private void button1_Click(object sender, EventArgs e)
         {
+            Limpiar();
             Orddesayuno.Text = "";
             ordplatillos.Text = "";
             ordpostres.Text = "";
@@ -30,9 +36,19 @@ namespace WindowsFormsApplication1
             Orddesayuno.Focus(); 
           
         }
-
+        private void Iniciar()
+        {
+            Tabla = new DataTable();
+            Tabla.Columns.Add("Ordenar");
+            Tabla.Columns.Add("Total");
+            grilla.DataSource = Tabla;
+        }
         private void button3_Click(object sender, EventArgs e)
         {
+            Guardar();
+            Iniciar();
+            Limpiar();
+            Consultar();
             MessageBox.Show("¿Esta seguro de realizar esta orden? ", "", MessageBoxButtons.YesNoCancel);
             if (DialogResult == DialogResult.Yes)
             {
@@ -48,6 +64,35 @@ namespace WindowsFormsApplication1
             resultado = Ordenar.Orden6(Caldo);
             resultado = Ordenar.Orden7(Postre);
             resultado = Ordenar.Orden8(Bebida);
+
+        }
+        private void Guardar()
+        {
+            usuarioModel modelo = new usuarioModel()
+            {
+                Desayunos = Orddesayuno.Text,
+                Platillos = ordplatillos.Text,
+                Postres = ordpostres.Text,
+                Bebidas = ordbebidas.Text,
+                Total = int.Parse(textTOTAL.Text)
+            };
+            dato.Iniciar(modelo);
+        }
+        private void Consultar()
+        {
+            foreach (var item in dato.Consultar())
+            {
+                DataRow fila = Tabla.NewRow();
+                fila["DESAYUNOS"] = item.Desayunos;
+                fila["PLATILLOS"] = item.Platillos;
+                fila["POSTRES"] = item.Postres;
+                fila["BEBIDAS"] = item.Bebidas;
+                fila["TOTAL"] = item.Total;
+                Tabla.Rows.Add(fila);
+            }
+        }
+        private void textTOTAL_TextChanged(object sender, EventArgs e)
+        {
 
         }
 
@@ -86,7 +131,14 @@ namespace WindowsFormsApplication1
         {
             Application.Exit();
         }
-
+        private void Limpiar()
+        {
+            Orddesayuno.Text = "";
+            ordplatillos.Text = "";
+            ordpostres.Text = "";
+            ordbebidas.Text = "";
+            textTOTAL.Text = "";
+        }
         private void Tomarorden_Load(object sender, EventArgs e)
         {
 

@@ -65,6 +65,7 @@
     <Compile Include="Carne.Designer.cs">
       <DependentUpon>Carne.cs</DependentUpon>
     </Compile>
+    <Compile Include="Datos\Usuario.cs" />
     <Compile Include="DelMar.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -89,6 +90,7 @@
     <Compile Include="Menu.Designer.cs">
       <DependentUpon>Menu.cs</DependentUpon>
     </Compile>
+    <Compile Include="Model\usuarioModel.cs" />
     <Compile Include="Pastas, Antojos y Ensaladas.cs">
       <SubType>Form</SubType>
     </Compile>

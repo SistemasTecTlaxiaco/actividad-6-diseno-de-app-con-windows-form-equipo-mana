@@ -60,3 +60,21 @@ C:\Users\anami\OneDrive\Escritorio\Trab\actividad-6-diseno-de-app-con-windows-fo
 C:\Users\LUCERO\Desktop\p5\actividad-6-diseno-de-app-con-windows-form-equipo-mana\WindowsFormsApplication1\bin\Debug\WindowsFormsApplication1.exe.config
 C:\Users\LUCERO\Desktop\p5\actividad-6-diseno-de-app-con-windows-form-equipo-mana\WindowsFormsApplication1\obj\Debug\WindowsFormsApplication1.exe
 C:\Users\LUCERO\Desktop\p5\actividad-6-diseno-de-app-con-windows-form-equipo-mana\WindowsFormsApplication1\obj\Debug\WindowsFormsApplication1.pdb
+C:\Users\arlet\Desktop\App Restaurante\WindowsFormsApplication1\obj\Debug\Restaurantee.csproj.AssemblyReference.cache
+C:\Users\arlet\Desktop\App Restaurante\WindowsFormsApplication1\obj\Debug\WindowsFormsApplication1.Bebidas.resources
+C:\Users\arlet\Desktop\App Restaurante\WindowsFormsApplication1\obj\Debug\WindowsFormsApplication1.Caldos.resources
+C:\Users\arlet\Desktop\App Restaurante\WindowsFormsApplication1\obj\Debug\WindowsFormsApplication1.Carne.resources
+C:\Users\arlet\Desktop\App Restaurante\WindowsFormsApplication1\obj\Debug\WindowsFormsApplication1.DelMar.resources
+C:\Users\arlet\Desktop\App Restaurante\WindowsFormsApplication1\obj\Debug\WindowsFormsApplication1.Desayunos.resources
+C:\Users\arlet\Desktop\App Restaurante\WindowsFormsApplication1\obj\Debug\WindowsFormsApplication1.Iniciar.resources
+C:\Users\arlet\Desktop\App Restaurante\WindowsFormsApplication1\obj\Debug\WindowsFormsApplication1.Menu.resources
+C:\Users\arlet\Desktop\App Restaurante\WindowsFormsApplication1\obj\Debug\WindowsFormsApplication1.Pastas__Antojos_y_Ensaladas.resources
+C:\Users\arlet\Desktop\App Restaurante\WindowsFormsApplication1\obj\Debug\WindowsFormsApplication1.Pollo_y_hamburguesas.resources
+C:\Users\arlet\Desktop\App Restaurante\WindowsFormsApplication1\obj\Debug\WindowsFormsApplication1.Postres.resources
+C:\Users\arlet\Desktop\App Restaurante\WindowsFormsApplication1\obj\Debug\WindowsFormsApplication1.siguiente.resources
+C:\Users\arlet\Desktop\App Restaurante\WindowsFormsApplication1\obj\Debug\WindowsFormsApplication1.Properties.Resources.resources
+C:\Users\arlet\Desktop\App Restaurante\WindowsFormsApplication1\obj\Debug\WindowsFormsApplication1.Tomarorden.resources
+C:\Users\arlet\Desktop\App Restaurante\WindowsFormsApplication1\obj\Debug\Restaurantee.csproj.GenerateResource.cache
+C:\Users\arlet\Desktop\App Restaurante\WindowsFormsApplication1\obj\Debug\Restaurantee.csproj.CoreCompileInputs.cache
+C:\Users\arlet\Desktop\App Restaurante\WindowsFormsApplication1\obj\Debug\WindowsFormsApplication1.exe
+C:\Users\arlet\Desktop\App Restaurante\WindowsFormsApplication1\obj\Debug\WindowsFormsApplication1.pdb
